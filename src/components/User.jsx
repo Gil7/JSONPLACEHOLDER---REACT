@@ -6,20 +6,20 @@ class User extends Component {
     }
     render() {
         return (
-            <div class="row">
-                <div class="col s12 m6">
-                    <div class="card blue-grey darken-1">
-                        <div class="card-content white-text">
-                            <span class="card-title">{this.props.name}</span>
-                            <p>USER</p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#">This is a link</a>
-                            <a href="#">This is a link</a>
-                        </div>
+            
+            <div className="col s12 m6">
+                <div className="card blue-grey darken-1">
+                    <div className="card-content white-text">
+                        <span className="card-title">{this.props.name}</span>
+                        <p>Email: {this.props.email}</p>
+                    </div>
+                    <div className="card-action">
+                        <a href="#">See more details</a>
                     </div>
                 </div>
             </div>
+            
         )
     }
 }
+export default User;

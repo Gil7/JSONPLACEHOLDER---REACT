@@ -23,14 +23,18 @@ class Users extends Component {
         const usersList = this.state.users.map(user => {
             return (
                 <User
+                    email={user.email}
                     name={user.name}
                 />
             )
         })
         return (
             <div>
-                <h2>Users created</h2>               
-                {usersList}
+                <h2>Users created</h2>  
+                <div className="row">
+                    {usersList}
+                </div>             
+                
             </div>
         )
     }
